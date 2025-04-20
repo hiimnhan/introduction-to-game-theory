@@ -16,7 +16,6 @@
   link-color: rgb("#008002"),
   // Insert your abstract after the colon, wrapped in brackets.
   // Example: `abstract: [This is my abstract...]`
-  abstract: "This is my notes and comments, and exercise answers on the book Introduction to Game Theory by Martin J. Osborne",
   keywords: ("Game Theory",),
   AMS: ()
 )

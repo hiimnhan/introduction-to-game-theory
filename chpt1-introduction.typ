@@ -1,7 +1,13 @@
+#import emoji: pencil, excl
+
+#pencil This is my notes and exercise answers on the book Introduction to Game Theory by Martin J. Osborne. Some exercise answers are from The Solution manual for An Introduction to Game Theory by the author himself. I am not that smart. Most parts are from the book
+
+Emoji indicators:
+- My comments will be mark #pencil
+- What I think is important will be marked #excl
 = Introduction
 == What is game theory?
 Game Theory aims to help us understand situations in which decision-makers interact. It can be firms competing for business, bidders competing in an auction, couple decide which concerts to attend,... It is everywhere
-
 == Theory of rational choice
 The theory is based on a model with two components: a set $A$ consisting of all the actions that, under some circumstances, are available to the decision-maker, and a specification of the decision-maker's preferences.
 === Actions

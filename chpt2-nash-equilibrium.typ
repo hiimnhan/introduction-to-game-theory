@@ -1,5 +1,5 @@
 #import "utils.typ": *
-#import emoji: pencil
+#import emoji: pencil, excl
 = Nash Equilibrium: Theory
 == Strategic Games
 A strategic game is a model of interacting decision-makers. Each decision-maker now can be called _player_. Each player has a set of possible _actions_. The model captures interaction between the players by allowing each player to be affected by the actions of all players, not only herself. Specially, each player has _preferences_ about the action _profile_-the list of all players actions.
@@ -13,7 +13,7 @@ A strategic game is a model of interacting decision-makers. Each decision-maker 
 ]
 
 The players can be firms, bidders, action prices, candidates for political offices,...
-== Example: the Prisoner's Dilemma
+== Example: the Prisoner's Dilemma 
 #example(title: "the Prisoner's Dilemma")[
   Two suspects in a major crime are held in separate cells. There is enough evidence to convict each of them of a minor offense, but not enough evidence to convict either of them of the major crime unless one of them acts as an informer against the other (finks). If they both stay quiet, each will be convicted of the minor offense and spend one year in prison. If one and only one of them finks, she will be freed and used as a witness against the other, who will spend four years in prison. If they both fink, each will spend three years in prison.
 ]<prisoner>
@@ -106,7 +106,7 @@ You may find this game in the situation between luxury brands and companies prod
 == Other Examples
 In the book
 
-== Nash equilibrium
+== Nash equilibrium #excl
 _Nash equilibrium_ is like a situation in a game where everyone has chosen their best move, knowing what everyone else has chosen, and *nobody wants to change their decision alone*. It's a stable point.
 
 #mathpar[
@@ -130,7 +130,7 @@ This definition implies neither that a strategic game necessarily has a Nash equ
 #pencil This definition is designed for only smart players who have already known each others's preferences, carefully consider what they need to do and deduce about other player's actions.
 
 == Examples of Nash equilibrium
-=== Prisoner's Dilemma @prisoner
+=== Prisoner's Dilemma @prisoner #excl
 
 By examing the 4 possible pairs of actions in the _Prisoner's Dilemma_ (reproduced in @prisoner_fig2), we see that (_Fink_, _Fink_) is an unique Nash equilibrium.
 
