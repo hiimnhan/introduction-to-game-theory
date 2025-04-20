@@ -33,5 +33,7 @@
     context enum(..args, start: item-counter.get().first() + 1, ..items)
     item-counter.update(i => i + it.children.len())
   }
+
+  set bibliography(style: "chicago-author-date")
   body
 }

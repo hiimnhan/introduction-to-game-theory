@@ -7,3 +7,4 @@
 
 #include "chpt1-introduction.typ"
 #include "chpt2-nash-equilibrium.typ"
+#include "bib.typ"

@@ -271,3 +271,52 @@ We conclude the game has 2 Nash equilibria (_B_, _B_) and (_S_, _S_).
 
   The game has 2 Nash equilibria (_Agg_, _Pas_) and(_Pas_, _Agg_)
 ]
+
+=== A coordination game
+=== Provision of a public good
+#exercise(title: "Contributing to a public good")[
+  Each of $n$ people chooses whether or not to contribute to a fixed amount toward the provision of a public good. The good is provided if and only if at least $k$ people contribute, where $2 <= k <= n$; if it is not provided, contributions are not refunded. Each person ranks outcomes from best to worst as follows:
+  + any outcome in which the good is provided and she does not contribute,
+  + any outcome in which the good is provided and she contributes,
+  + any outcome in which the good is not provided and she does not contribute.
+  + any outcome in which the good is not provided and she contributes,
+  Formulate this situation as a strategic game and find its Nash equilibria. (Is there a Nash equilibrium in which more than $k$ people contribute? One in which $k$ people contribute? One in which fewer than $k$ people contribute?)
+
+  The game can be modeled as follow
+  #table(columns: 2, stroke: none, "Player", "The two suspects", "Action", "{Contribute, Don't contribute}", "Preferences", "Given in the problem")
+
+  - An action profile in which more than $k$ people contribute is not a Nash equilibrium: any contributor can deviate to not contributing to induce her preferred outcome.
+  - An action profile in which $k$ people contribute is a Nash equilibrium: if any contributor stops contributing, the good is not provided; if any non-contributor switches to contributing then she is worse off.
+  - An action profile in which less than $k$ people contribute is a Nash equilibrium only there is no contributor: if someone contributes, she can increase her payoff by switching to non-contribution.
+]
+=== Strict and nonstrict equilibria
+=== Additional examples
+#exercise(title: "Guessing two-third of the average")[
+  Each of three people announce an integer from $1$ to $N$. If the three integers are different, the person whose integer is closet to $2/3$ of the average of the three intergers wins \$1. If two or more integers are the same, \$1 is split equally between people whose integer is closet to $2/3$ of the average integer. Is there any integer $k$ such that the action profile ($k$, $k$, $k$), in which every person announces the same integer $k$, is a Nash equilibrium? (If $k >= 2$, what happens if a person announces a smaller integer?) Is any other action profile a Nash equilibrium? (What is the payoff of a person whose number is the highest of the three? Can she increase this payoff by annoucing a different number?)
+
+  If all three players announce the same integer $k$, then the average is $k$ and $2/3$ of the average is $2/3 k$. The payoff of each player is $1$ if $k$ is the closest integer to $2/3 k$, and $0$ otherwise. If $k >= 2$, then $2/3 k >= 1$ and the closest integer to it is at least 1. Thus, if a player announces a smaller integer, she can increase her payoff by announcing a different number. Thus, there is no Nash equilibrium in which all three players announce the same integer.
+
+  If all three players announce 1 , then no player can increase her payoff by announcing a different number. Thus, ($1$, $1$, $1$) is a Nash equilibrium.
+
+  Consider an action profile when not all numbers are the same; denote the highest number $k^*$:
+  - Suppose only one player announces $k^*$, denote the other integers named by $k_1$ and $k_2$ in which $k_1 >= k_2$. The average of all three integers is $ macron(k) = 1/3(k_1 + k_2 + k^*)$, so that $2/3$ of the average is $ K = 2/3macron(k)$. 
+    
+    If $k_1 >= K$ then $k^*$ is further from $2/3$ of the average than $k_1$ and hence can not win.
+    
+    If $k_1 < K$ then the distance between $k^*$ and $K$ is 
+    $
+      k^* - K = k^* - 2/9(k_1 + k_2 + k^*) =  7/9k^* - 2/9k_1 - 2/9k_2
+    $ 
+    and distance between $k_1$ and $K$ is
+    $
+      K - k_1 = 2/9(k_1 + k_2 + k^*) - k_1 = 2/9k^* - 7/9k_1 + 2/9k_2
+    $ 
+    
+    the distance between the former and the latter is $5/9k^* + 5/9k_1 - 4/9k_2 > 0$ then $k_1$ is closer to $K$ than $k^*$. Hence the player who names $k^*$ does not win, and is better to name $k_2$, in which case shen can share the prize. Thus no such action profile is a Nash equilibrium.
+
+  - Suppose two players announce $k^*$, denote the other integer named by $k$ in which $k < k^*$. The average of all three integers is $macron(k) = 1/3(2k^* + k)$ so that $2/3$ of the average is $K= 2/3macron(k) = 4/9k^* + 2/9k$. We have $4/9k^* + 2/9k < 1/2k^* + 1/2k$ so that the player names $k$ is the sole winner. Thus either of the other players can switch to name $k$ and share the prize. Thus there is no Nash equilibrium.
+
+  #pencil Read @NAGEL1995 for more interesting experimental studies on this game.
+]
+
+== Best response functions
